@@ -1,7 +1,19 @@
-import Image from "next/image";
+import FeaturedCourses from '@/components/FeaturedCourses';
+import FeaturedWebinars from '@/components/FeaturedWebinars';
+import HeroSection from '@/components/HeroSection';
+import Testimonialcard from '@/components/Testimonialcard';
+import WavySection from '@/components/WavySection';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 export default function Home() {
   return (
-   <h1 className="text-center">I am main page content</h1>
+    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <HeroSection />
+      <FeaturedCourses />
+      <WhyChooseUs />
+      <Testimonialcard />
+      <FeaturedWebinars />
+      <WavySection />
+    </main>
   );
 }
