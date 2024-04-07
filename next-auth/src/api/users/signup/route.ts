@@ -16,8 +16,10 @@ connectDB();
 // return response
 
 // this function is for post method in signup route
-async function POST(request: NextRequest) {
+export async function POST(request: NextRequest) {
   try {
+    console.log('Entering into try block');
+
     const requestBody = await request.json();
     const { username, email, password } = requestBody;
 
